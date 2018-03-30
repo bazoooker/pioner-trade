@@ -137,3 +137,15 @@
 		}
 	}
 }
+
+.btn_loc {
+
+	&:hover {
+
+		.icon_loc {			
+			&:after {
+				background-image: url(/img/icons/icon-location_white.png);
+			}
+		}
+	}
+}

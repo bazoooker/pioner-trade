@@ -6,6 +6,14 @@
 	height: 45%;
 
 	margin-bottom: 2rem;
+
+	text-decoration: none;
+
+	&:hover {
+		.product-slider-item__text {
+			transform: translateX(.7rem);
+		}
+	}
 }
 
 .product-slider-item__text {
@@ -20,6 +28,8 @@
 	font-size: 1.4rem;
 
 	background-color: $color_main;
+
+	transition: 300ms;
 
 	&:before {
 		@include pseudo;

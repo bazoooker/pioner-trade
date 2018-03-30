@@ -7,7 +7,7 @@
 	align-items: center;
 	justify-content: flex-start;
 
-	margin: -.6rem 0 -.6rem 6rem;
+	margin: -1.2rem 0 -1.2rem 6rem;
 	padding: .5rem 1.5rem .5rem 1.5rem;
 
 	color: #fff;
@@ -16,7 +16,7 @@
 
 	font-size: 1.6rem;
 
-	transition: 200ms;
+	transition: 100ms;
 
 	&:after {
 		@include pseudo;
@@ -31,9 +31,9 @@
 		background-position: 50% 50%; 
 	}
 
-	// &:hover {
-	// 	background-color: orange;
-	// }
+	&:hover {
+		background-color: orange;
+	}
 }
 
 .nav-link_home {
@@ -42,9 +42,9 @@
 	padding: 0;
 	border-radius: 50%;
 	overflow: hidden;
-	// &:hover {
-	// 	background-color: orange;
-	// }
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 

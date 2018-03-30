@@ -1,13 +1,21 @@
 .swiper {}
 .swiper-container {}
 
+.swiper-controls-holder {
+	position: relative;
+}
+
+// hero slider
+
 .swiper-container-main {
+	position: relative;
 	height: 43rem;
 	overflow: hidden;
 
 	margin-bottom: 4rem;
 
 	.swiper-slide {
+		background-size: cover;
 
 		.container {
 			position: relative;
@@ -21,13 +29,15 @@
 }
 
 
+// products\categories slider
+
 .swiper-container-products {
+	position: relative;
 	height: 27rem;
 	overflow: hidden;
 
-	// margin-bottom: 2rem;
-
 	.swiper-slide {
+		background-size: cover;
 
 		@include flex-col;
 
@@ -42,11 +52,15 @@
 	}
 }
 
+// news slider
+
 .swiper-container-news {
-	height: 15rem;
+	position: relative;
+	height: 17rem;
 	overflow: hidden;
 
 	margin-bottom: 4rem;
+	padding-bottom: 3rem; /*for pagination*/
 
 	.swiper-slide {
 
@@ -64,47 +78,105 @@
 }
 
 
+// SLIDER ARROWS
+// =================
 
 
+// 	ALL ARROWS
 
+.swiper-button_size-l,
+.swiper-button_size-s {
+	position: absolute;
 
-.swiper-button-next{
-	right: 0px;
-	width: 40px;
-	height: 167px;
-	background-image: url(/img/icons/caret_right.png);
-	background-size: cover;
-	opacity: .9;
-	transition: all 300ms;
+	top: 50%;
+	transform: translateY(-50%);
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	opacity: .65;
+	cursor: pointer;
+	z-index: 3;
+	transition: all 200ms;
+
 	&:hover {
-		transform: translateX(2px);
 		opacity: 1;
 	}
-
-	@media screen and (max-width: 1397px) {
-		right: 10px;
-	}
-	@media screen and (max-width: 640px) {
-		display: none;
-	}
+	
 }
-.swiper-button-prev{
-	left: 0px;
-	width: 40px;
-	height: 167px;
-	background-image: url(/img/icons/caret_left.png);
-	background-size: cover;
-	opacity: .9;
-	transition: all 300ms;
-	&:hover {
-		transform: translateX(-2px);
-		opacity: 1;
-	}
+		// SMALL ARROWS
 
-	@media screen and (max-width: 1366px) {
-		left: 10px;
-	}
-	@media screen and (max-width: 640px) {
-		display: none;
-	}
+		.swiper-button_size-s {
+			width: 3.14em;
+			height: 9rem;
+		}
+
+		// LARGE ARROWS
+
+		.swiper-button_size-l {
+			width: 5.1rem;
+			height: 16rem;
+		}
+
+
+
+// HERO SLIDER ARROWS
+
+.hero-slider-btn_next{	
+	right: 10rem;	
+	background-image: url(/img/swiper/swiper-arrow-right.png);
 }
+
+.hero-slider-btn_prev{	
+	left: 10rem;	
+	background-image: url(/img/swiper/swiper-arrow-left.png);
+}
+
+// PRODUCTS SLIDER ARROWS
+
+.products-slider-btn_next{	
+	right: -10rem;	
+	background-image: url(/img/swiper/swiper-arrow-right_size-s.png);
+}
+
+.products-slider-btn_prev{	
+	left: -10rem;	
+	background-image: url(/img/swiper/swiper-arrow-left_size-s.png);
+}
+
+// NEWS SLIDER ARROWS
+
+.news-slider-btn_next{	
+	top: 39% !important;
+	right: -10rem;	
+	background-image: url(/img/swiper/swiper-arrow-right_size-s.png);
+}
+
+.news-slider-btn_prev{	
+	top: 39% !important;
+	left: -10rem;	
+	background-image: url(/img/swiper/swiper-arrow-left_size-s.png);
+}
+
+
+
+
+.swiper-pagination {
+	bottom: -0.2rem !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 1.1rem;
+}
+
+.swiper-pagination-bullet {
+	background: #595959;
+	opacity: 1;	
+}
+.swiper-pagination-bullet-active {
+	background: $color_main;
+}
+.swiper-button-disabled {opacity: .2 !important;}
+
+

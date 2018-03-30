@@ -4,8 +4,8 @@
 	  slidesPerView: 1,
 	  spaceBetween: 0,
 	  navigation: {
-	    nextEl: '.swiper-button-next',
-	    prevEl: '.swiper-button-prev',
+	    nextEl: '.js-hero-slider-btn_next',
+	    prevEl: '.js-hero-slider-btn_prev',
 	  }	  
 	});
 
@@ -13,8 +13,8 @@
       slidesPerView: 2,
       spaceBetween: 20,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.js-products-slider-btn_next',
+        prevEl: '.js-products-slider-btn_prev',
       }   
     });
 
@@ -22,9 +22,13 @@
       slidesPerView: 2,
       spaceBetween: 20,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }   
+        nextEl: '.js-news-slider-btn_next',
+        prevEl: '.js-news-slider-btn_prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },   
     });
 
 

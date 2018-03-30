@@ -6,11 +6,23 @@
 	height: 100%;
 
 	margin-bottom: 2rem;
+	text-decoration: none;
+
+	&:hover {		
+		.news-slider-item__img {
+			transform: translateX(7px);
+		}
+		.news-slider-item__heading {
+			text-decoration: underline;
+		}
+	}
 }
 .news-slider-item__img {
 	flex: 1 1 30%;
 	background-size: cover;
 	background-postion: 50% 50%;
+
+	transition: 300ms;
 }
 .news-slider-item__text {
 	position: relative;
@@ -44,6 +56,7 @@
 	font-weight: 800;
 	text-transform: uppercase;
 	color: $color_main;
+	transition: 200ms;
 }
 .news-slider-item__ad {
 	font-size: 1.4rem;

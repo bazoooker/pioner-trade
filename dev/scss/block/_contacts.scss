@@ -26,19 +26,33 @@
 
 .contacts_header {
 
-	.contacts__tel {
-		color: $color_font;
-	}
+	.contacts__tel,
 	.contacts__mail {
+		text-decoration: none;
 		color: $color_font;
+		transition: 100ms;
+
+		&:hover {
+			color: $color_main;
+			.icon {
+				transform: scale(1.15);
+			}			
+		}		
 	}
 }
 .contacts_footer {
 
-	.contacts__tel {
-		color: #fff;
-	}
+	.contacts__tel,
 	.contacts__mail {
 		color: #fff;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:hover {
+			color: $color_main;
+			.icon {
+				transform: scale(1.15);
+			}			
+		}
 	}
 }

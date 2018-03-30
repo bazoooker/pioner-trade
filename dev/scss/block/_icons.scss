@@ -5,6 +5,12 @@
 	
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+
+	transition: 200ms;
+
+	&:hover {
+		opacity: .75;
+	}
 }
 	.logo_header { background-image: url(/img/logo.PNG); background-size: 272px;}
 	.logo_footer { background-image: url(/img/logo_white.PNG);}
@@ -19,12 +25,18 @@
 	width: 34px;
 	height: 34px;
 	border-radius: 50%;
+
+	transition: 150ms;
 }
 	.icon:after {
 		@include pseudo;
 		width: 15px;
 		height: 15px;
 		background-size: 15px;
+
+		top: 50%;
+	    left: 50%;
+	    transform: translateY(-50%) translateX(-50%);
 	}
 
 /* icon backgrounds */
@@ -71,4 +83,10 @@
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
-.icon_loc {}
+.icon_loc {
+	background-color: transparent;
+    margin: 0 0 0 -1.6rem;
+	&:after {
+		background-image: url(/img/icons/icon-location.png);
+	}
+}

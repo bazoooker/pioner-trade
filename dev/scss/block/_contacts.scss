@@ -1,0 +1,44 @@
+.contacts {
+	@include flex-row;
+	justify-content: flex-end;
+	align-items: center;
+	font-weight: 800;
+}
+
+.contacts__tel {
+	@include flex-row;
+	justify-content: flex-start;
+	align-items: center;
+	color: $color_font;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-right: 40px;
+}
+.contacts__mail {
+	@include flex-row;
+	justify-content: flex-start;
+	align-items: center;
+	color: $color_font;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin-right: 40px;
+}
+
+.contacts_header {
+
+	.contacts__tel {
+		color: $color_font;
+	}
+	.contacts__mail {
+		color: $color_font;
+	}
+}
+.contacts_footer {
+
+	.contacts__tel {
+		color: #fff;
+	}
+	.contacts__mail {
+		color: #fff;
+	}
+}

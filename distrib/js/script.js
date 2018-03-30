@@ -1,23 +1,31 @@
 
 	// свайпер
-	var swiper = new Swiper('.swiper-container', {
-	  slidesPerView: 2,
-	  spaceBetween: 20,
+	var swiperMain = new Swiper('.swiper-container-main', {
+	  slidesPerView: 1,
+	  spaceBetween: 0,
 	  navigation: {
 	    nextEl: '.swiper-button-next',
 	    prevEl: '.swiper-button-prev',
-	  },
-	  breakpoints: {	    
-	    768: {
-	      slidesPerView: 1,
-	      spaceBetween: 10
-	    }
-	  }
+	  }	  
 	});
 
-	// маска для телефонной формы
-	$('.form-action').mask('+7(000)000-00-00');
+    var swiperProd = new Swiper('.swiper-container-products', {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }   
+    });
 
+    var swiperNews = new Swiper('.swiper-container-news', {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }   
+    });
 
 
 	/* МОДАЛЬНЫЕ ОКНА */

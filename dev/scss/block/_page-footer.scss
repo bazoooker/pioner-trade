@@ -1,0 +1,11 @@
+.page-footer {
+	background-color: #3e3e3e;
+
+	.container {
+		@include flex-row;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 3rem 0 3rem 0;	
+	}
+}

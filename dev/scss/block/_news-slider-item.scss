@@ -1,0 +1,50 @@
+.news-slider-item {
+	@include flex-row;
+	justify-content: stretch;
+	align-items: stretch;
+
+	height: 100%;
+
+	margin-bottom: 2rem;
+}
+.news-slider-item__img {
+	flex: 1 1 30%;
+	background-size: cover;
+	background-postion: 50% 50%;
+}
+.news-slider-item__text {
+	position: relative;
+
+	flex: 1 1 65%;
+	
+	padding: 2.5rem 2rem 2.5rem 2rem;
+
+	background-color: #fff;
+
+	&:before {
+		@include pseudo;
+
+	    left: -3.7rem;
+	    top: 0;
+	    height: 100%;
+	    width: 3.8rem;
+	    background-image: url(/img/bg/edge-newsitem-white.png);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: bottom right;
+	}
+}
+
+.news-slider-item__heading {
+	display: block;
+
+	margin-bottom: 2.4rem;
+
+	font-size: 1.4rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: $color_main;
+}
+.news-slider-item__ad {
+	font-size: 1.4rem;
+}

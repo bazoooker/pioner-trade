@@ -1,3 +1,4 @@
+
 @import "base/normalize";
 
 @import "assets/stylesheets/var";
@@ -8,9 +9,36 @@
 @import "base/typography";
 
 
+@import "block/grid.scss";
 @import "block/container.scss";
+@import "block/icons.scss";
+
+@import "block/page-header.scss";
+@import "block/contacts.scss";
+@import "block/page-nav.scss";
+@import "block/nav-link.scss";
+
+@import "block/slide-content.scss";
+@import "block/advantages.scss";
+@import "block/advantage.scss";
+@import "block/page-section.scss";
+
+@import "block/product-slider-item.scss";
+@import "block/news-slider-item.scss";
+
+@import "block/page-footer.scss";
 
 
+@import "block/news.scss";
+@import "block/btn.scss";
+@import "block/btn-holder.scss";
+
+
+
+
+
+
+@import "block/helper.scss";
 
 @import "block/modal.scss";
 @import "block/swiper.scss";

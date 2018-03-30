@@ -1,0 +1,11 @@
+.page-nav {
+	@include flex-row;
+	align-items: stretch;
+	justify-content: flex-start;
+
+	padding: 1.2rem 0;
+	margin-bottom: -2.9rem;
+	z-index: 2;
+
+	background-color: $color_main;
+}

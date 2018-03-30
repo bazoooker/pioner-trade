@@ -1,0 +1,139 @@
+.btn {
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 800;
+
+	// transition: 250ms;
+
+	// overflow: hidden;
+
+	&:after {
+		@include pseudo;		
+	}
+}
+
+.btn_outline-main {
+	position: relative;
+
+	@include flex-row;
+
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 3.5rem 0 3rem;
+
+	width: auto;
+	height: 3.2rem;
+
+	color: $color_main;
+	border-left: 1px solid $color_main;
+	border-top: 1px solid $color_main;
+	border-bottom: 1px solid $color_main;
+
+	&:after {
+	    width: 2rem;
+	    height: 3.2rem;
+
+	    top: -1px;
+	    right: -0.5rem;
+
+	    z-index: 10;
+
+	    transform: skew(-18deg);
+	    border-right: 1px solid #fc5a0a;
+	    border-top: 1px solid #fc5a0a;
+	    // transition: 250ms;
+	}
+
+	&:hover {
+		background-color: $color_main;
+		color: #fff;
+		&:after {
+			background-color: $color_main;
+		}
+	}
+}
+.btn_outline-white {
+	position: relative;
+
+	@include flex-row;
+
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 3.5rem 0 3rem;
+
+	width: auto;
+	height: 3.2rem;
+
+	color: #fff;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+
+	&:after {
+	    width: 2rem;
+	    height: 3.2rem;
+
+	    top: -1px;
+	    right: -0.5rem;
+
+	    z-index: 10;
+
+	    transform: skew(-18deg);
+	    border-right: 1px solid #fff;
+	    border-top: 1px solid #fff;
+	}
+
+	&:hover {
+		background-color: #fff;
+		color: #3e3e3e;
+		&:after {
+			background-color: #fff;
+		}
+	}
+}
+.btn_filled {
+	position: relative;
+
+	@include flex-row;
+
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 3.5rem 0 3rem;
+
+	width: auto;
+	width: 240px;
+	margin: 0 auto;
+	height: 3.2rem;
+
+	color: #fff;
+	
+	background-color: $color_main;
+
+	&:after {
+	    width: 2rem;
+	    height: 3.2rem;
+
+	    top: 0;
+	    right: -0.5rem;
+
+	    z-index: 10;
+
+	    background-color: $color_main;
+
+	    transform: skew(-18deg);
+
+	}
+
+	&:hover {
+	    background-color: rgb(227, 161, 34);
+		color: #fff;
+		&:after {
+		    background-color: rgb(227, 161, 34);
+		}
+	}
+}

@@ -2,13 +2,31 @@ html {
   font-size: 62.5%;
 }
 
-h1, h2 { font-size: 3rem; font-family: 'latoheavy' }
+h1, h2 { font-size: 3rem; font-family: 'latoheavy'; color: $color_main; }
 h3 { font-size: 2.5rem; }
 h4 { font-size: 2.1rem; }
 h5 { font-size: 1.9rem; }
 h6 { font-size: 1.7rem; }
 
-p {}
+
+section {
+	h1:first-child,
+	h2:first-child,
+	h3:first-child {
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+
+p, span {
+	color: #000;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+}
 
 a {}
   a:hover {}
@@ -18,3 +36,10 @@ a {}
 table {}
 table tr {}
 
+ul {
+	padding-left: 1.4rem;
+
+	li {
+		margin-bottom: .5rem;	
+	}
+}

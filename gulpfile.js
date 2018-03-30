@@ -16,8 +16,7 @@ gulp.task('serve', ['sass'], function() {
     });
 
     gulp.watch("dev/scss/**/*.scss", ['sass']);
-    gulp.watch("distrib/*.html").on('change', browserSync.reload);
-    browserSync.notify("Compiling, please wait!");
+    gulp.watch("distrib/*.html").on('change', browserSync.reload);    
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -29,7 +28,7 @@ gulp.task('sass', function() {
             cascade: false
         }))
         .pipe(gulp.dest("distrib/css"))
-        .pipe(notify("Hello Gulp!"))
+        .pipe(notify("Css injected!", 300))
         .pipe(browserSync.stream())
 });
 

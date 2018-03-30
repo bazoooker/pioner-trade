@@ -1,0 +1,11 @@
+.page-header {
+	position: relative;
+	z-index: 2;
+}
+.page-header__top-bar {
+	@include flex-row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 3rem 0 3rem 0;
+}

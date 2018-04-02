@@ -1,0 +1,22 @@
+.product-group {
+	margin-bottom: 2.5rem;
+}
+.product-group__letter {
+	@include flex-row;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 2.5rem;
+	height: 2.5rem;
+
+	padding-top: .2rem;
+	margin-bottom: .7rem;
+
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+
+	background-color: #de8619;
+	border-radius: 50%;
+}

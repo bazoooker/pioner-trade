@@ -17,7 +17,8 @@
             <meta content="химическое сырье, биологические ресурсы" name="keywords" />
 
             <!-- styles -->
-            <link href="css/swiper.min.css" rel="stylesheet"/>            
+            <link href="css/swiper.min.css" rel="stylesheet"/>
+            <link href="css/lightbox.css" rel="stylesheet">            
             
             <link href="css/main.css" rel="stylesheet"/>     <!-- gulp -->
             <link href="css/custom.css" rel="stylesheet"/>     <!-- css no preprocessor -->
@@ -92,157 +93,92 @@
                                                 <div class="section-tabs__content section-tabs__content_type-small">
 
                                                     <!-- PANEL -->
+                                                    <!-- алфивитный каталог -->
                                                     <article class="slide">
 
-                                                        <div class="product-category js-accordeon opened">
+                                                        <div class="product-list">
+                                                            
+                                                            <!-- названия столбцов -->
 
-                                                            <!-- panel name -->
-                                                            <div class="product-category__label js-accordeon__label">
-                                                                Полимерное сырье и лакокрасочные материалы
+                                                            <div class="product-list__heading">
+                                                                <div class="product-list__name"></div>
+                                                                <div class="product-list__manufact">Производитель</div>
+                                                                <div class="product-list__package">Фасовка</div>
+                                                                <div class="product-list__availability">Наличие</div>
                                                             </div>
+                                                            
+                                                            
+                                                            <!-- обертка товарной группы -->
+                                                            <div class="product-group">
 
-                                                            <!-- panel content -->
-                                                            <div class="product-category__content js-accordeon__content">
+                                                                <!-- буква -->
+                                                                <span class="product-group__letter">а</span>
+                                                                
+                                                                <!-- выведение товаров -->   
 
-                                                                <div class="product-list">
-                                                                    
-                                                                    <!-- названия столбцов -->
-
-                                                                    <div class="product-list__heading">
-                                                                        <div class="product-list__name"></div>
-                                                                        <div class="product-list__manufact">Производитель</div>
-                                                                        <div class="product-list__package">Фасовка</div>
-                                                                        <div class="product-list__availability">Наличие</div>
-                                                                    </div>
-                                                                    
-                                                                    <!-- выведение товаров -->
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">АБС-Пластик</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">Диоксид титана</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">5 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">Меламин</div>
-                                                                        <div class="product__manufact">Россия</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-                                                                    
+                                                                <div class="product">
+                                                                    <div class="product__name">АБС-Пластик</div>
+                                                                    <div class="product__manufact">Китай</div>
+                                                                    <div class="product__package">25 кг/мешок</div>
+                                                                    <div class="product__availability">В наличии</div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-
-                                                        <div class="product-category js-accordeon">
-
-                                                            <!-- panel name -->
-                                                            <div class="product-category__label js-accordeon__label">
-                                                                Горная и металлургическая промышленность
-                                                            </div>
-
-                                                            <!-- panel content -->
-                                                            <div class="product-category__content js-accordeon__content" style="display: none;">
-
-                                                                <div class="product-list">
-
-                                                                    <!-- названия столбцов -->
-
-                                                                    <div class="product-list__heading">
-                                                                        <div class="product-list__name"></div>
-                                                                        <div class="product-list__manufact">Производитель</div>
-                                                                        <div class="product-list__package">Фасовка</div>
-                                                                        <div class="product-list__availability">Наличие</div>
-                                                                    </div>
-
-                                                                    <!-- выведение товаров -->
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">АБС-Пластик</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">Диоксид титана</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">5 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">Меламин</div>
-                                                                        <div class="product__manufact">Россия</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-                                                                    
+                                                                <div class="product">
+                                                                    <div class="product__name">Диоксид титана</div>
+                                                                    <div class="product__manufact">Китай</div>
+                                                                    <div class="product__package">5 кг/мешок</div>
+                                                                    <div class="product__availability">В наличии</div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-
-                                                        <div class="product-category js-accordeon">
-
-                                                            <!-- panel name -->
-                                                            <div class="product-category__label js-accordeon__label">
-                                                                Кожевенная промышленность
-                                                            </div>
-
-                                                            <!-- panel content -->
-                                                            <div class="product-category__content js-accordeon__content" style="display: none;">
-
-                                                                <div class="product-list">
-
-                                                                    <!-- названия столбцов -->
-
-                                                                    <div class="product-list__heading">
-                                                                        <div class="product-list__name"></div>
-                                                                        <div class="product-list__manufact">Производитель</div>
-                                                                        <div class="product-list__package">Фасовка</div>
-                                                                        <div class="product-list__availability">Наличие</div>
-                                                                    </div>
-
-                                                                    <!-- выведение товаров -->
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">АБС-Пластик</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">АБС-Пластик</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-
-                                                                    <div class="product">
-                                                                        <div class="product__name">АБС-Пластик</div>
-                                                                        <div class="product__manufact">Китай</div>
-                                                                        <div class="product__package">25 кг/мешок</div>
-                                                                        <div class="product__availability">В наличии</div>
-                                                                    </div>
-                                                                    
+                                                                <div class="product">
+                                                                    <div class="product__name">Меламин</div>
+                                                                    <div class="product__manufact">Россия</div>
+                                                                    <div class="product__package">25 кг/мешок</div>
+                                                                    <div class="product__availability">В наличии</div>
                                                                 </div>
-                                                            </div>
+
+                                                            </div> 
+
+
+                                                            <!-- обертка товарной группы -->
+                                                            <div class="product-group">
+
+                                                                <!-- буква -->
+                                                                <span class="product-group__letter">Б</span>
+                                                                
+                                                                <!-- выведение товаров -->   
+                                                                 
+                                                                <div class="product">
+                                                                    <div class="product__name">АБС-Пластик</div>
+                                                                    <div class="product__manufact">Китай</div>
+                                                                    <div class="product__package">25 кг/мешок</div>
+                                                                    <div class="product__availability">В наличии</div>
+                                                                </div>
+
+                                                                <div class="product">
+                                                                    <div class="product__name">Диоксид титана</div>
+                                                                    <div class="product__manufact">Китай</div>
+                                                                    <div class="product__package">5 кг/мешок</div>
+                                                                    <div class="product__availability">В наличии</div>
+                                                                </div>
+
+                                                                <div class="product">
+                                                                    <div class="product__name">Меламин</div>
+                                                                    <div class="product__manufact">Россия</div>
+                                                                    <div class="product__package">25 кг/мешок</div>
+                                                                    <div class="product__availability">В наличии</div>
+                                                                </div>
+
+                                                            </div>   
+
+                                                            
+                                                            
                                                         </div>
 
                                                     </article>
 
                                                     <!-- PANEL -->
+                                                    <!-- отраслевой каталог -->
                                                     <article class="slide" style="display: none;">
 
                                                         <div class="product-category js-accordeon opened">
@@ -394,6 +330,7 @@
                                                     </article>
 
                                                     <!-- PANEL -->
+                                                    <!-- специальный предложения -->
                                                     <article class="slide" style="display: none;">
 
                                                         <div class="product-category js-accordeon opened">
@@ -568,10 +505,10 @@
                                           <a href="#" class="btn btn_outline-main" style="width: 250px;">ТИПОВОЙ ДОГОВОР ПОСТАВКИ</a>
 
                                           <div class="sidebar__photos">
-                                                <a href="#" class="sidebar-photo" style="background-image: url(img/bg/swiper-slide1.jpg)"></a>
-                                                <a href="#" class="sidebar-photo" style="background-image: url(img/bg/swiper-slide1.jpg)"></a>
-                                                <a href="#" class="sidebar-photo" style="background-image: url(img/bg/swiper-slide1.jpg)"></a>
-                                                <a href="#" class="sidebar-photo" style="background-image: url(img/bg/swiper-slide1.jpg)"></a>
+                                                <a href="/img/bg/swiper-slide1.jpg" data-lightbox="image-1" class="sidebar-photo"  style="background-image: url(/img/bg/swiper-slide1.jpg)"></a>
+                                                <a href="/img/bg/swiper-slide1.jpg" data-lightbox="image-1" class="sidebar-photo"  style="background-image: url(/img/bg/swiper-slide1.jpg)"></a>
+                                                <a href="/img/bg/swiper-slide1.jpg" data-lightbox="image-1" class="sidebar-photo"  style="background-image: url(/img/bg/swiper-slide1.jpg)"></a>
+                                                <a href="/img/bg/swiper-slide1.jpg" data-lightbox="image-1" class="sidebar-photo"  style="background-image: url(/img/bg/swiper-slide1.jpg)"></a>
                                           </div>
                                     </aside>
                               </div>
@@ -651,9 +588,10 @@
         </script>
        <!--  <script src="/js/modernizr.custom.62035.js" type="text/javascript">
         </script> -->
-        <script src="js/swiper.min.js">
+        <script src="/js/swiper.min.js">
         </script>
-        <script src="js/script.js">
+        <script src="/js/lightbox.min.js"></script>
+        <script src="/js/script.js">
         </script>
     </body>
 </html>

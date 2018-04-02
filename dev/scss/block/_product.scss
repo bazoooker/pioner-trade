@@ -10,6 +10,10 @@
 	&:nth-child(odd) {
 		background-color: #f4f4f4;
 	}
+
+	&:hover {
+		background-color:#ffe9ca; 
+	}
 }
 
 .product__name {

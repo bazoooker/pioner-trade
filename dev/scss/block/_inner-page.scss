@@ -1,0 +1,9 @@
+.inner-page {
+	margin-top: 2.9rem; /* compensate for nav 5.8rem height outside header */	
+}
+
+.inner-page__grid {
+	@include flex-row;
+	align-items: flex-start;
+	justify-content: space-between;
+}

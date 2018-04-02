@@ -1,0 +1,27 @@
+.product-list {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: stretch;
+	justify-content: flex-start;
+}
+
+.product-list__heading {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+.product-list__name {
+	flex: 0 1 50%;
+	padding: .5rem;
+}
+.product-list__manufact,
+.product-list__package,
+.product-list__availability {
+	flex: 0 1 17.5%;
+	font-size: 1.3rem;
+	color: #b2b2b2;	
+	font-style: italic;
+	padding: .5rem;
+}

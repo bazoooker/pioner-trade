@@ -1,0 +1,34 @@
+.product {
+	display: flex;
+	flex-flow: row nowrap;
+
+	padding: .7rem 0;
+
+	font-size: 13px;
+	color: #3e3e3e;
+
+	&:nth-child(odd) {
+		background-color: #f4f4f4;
+	}
+}
+
+.product__name {
+	flex: 0 1 50%;
+	padding: .5rem;
+
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.product__manufact,
+.product__package,
+.product__availability {
+	flex: 0 1 17.5%;
+	padding: .5rem;
+}
+
+.product__name {}
+.product__manufact {}
+.product__package {}
+.product__availability {}
+

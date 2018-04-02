@@ -1,0 +1,275 @@
+
+/*BLOCK
+================*/
+.section-tabs {
+      /*поведение*/
+      display: flex;
+      /*стили*/
+      // background-color: lightgray;   	  	
+}
+
+// HORIZONTAL TABS
+.section-tabs_horizontal {
+	 flex-flow: column nowrap;
+
+	.section-tabs__tabs {
+		/*поведение*/
+
+		// display: flex;
+		// flex-flow: row nowrap;	
+		// flex: 1 1 90%;
+
+		/*стили*/
+		margin-bottom: 3.8rem;
+
+		& > ul {
+		      /*поведение*/
+		      display: flex;
+		      flex-flow: row nowrap;
+		      /*стили*/
+		      margin: 0;
+		      padding: 0;
+		      width: 100%;
+
+		  	& > li {
+			      /*поведение*/
+			      flex: 1 1 30%;
+			      /*стили*/
+			      // background-color: gray;
+			      list-style: none;
+			      padding: 1.6rem .5rem;
+			      margin: 1px;
+			      cursor: pointer;
+			      text-align: center;
+
+			      font-size: 1.4rem;
+			      font-weight: 800;
+			      text-transform: uppercase;
+
+			      transition: 200ms;
+
+			      &.active {
+			      	background-color: orange;
+			      	color: #fff;
+			      }
+
+			      &:hover {opacity: .85;}
+		    	}
+		}
+	}
+
+	.section-tabs__content {
+		/*поведение*/
+		flex: 1 1 100%;
+		/*стили*/
+		padding: 0;
+	}
+}
+
+.tab_sale {
+	position: relative;
+
+	&.active {
+		&:after {
+			transform: translateX(2rem) translateY(-2rem);
+		}
+	}
+
+	&:after {
+		@include pseudo;
+
+		right: -.6rem;
+		top:-.6rem;
+
+		width: 2.3rem;
+		height: 2.3rem;
+
+		background-image: url(/img/icons/icon-sale.png);
+		background-position: 50% 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+
+		transition: 150ms;
+	}
+}
+
+
+
+
+// VERTICAL TABS
+.section-tabs_vertical {
+	 flex-flow: row nowrap;
+
+	.section-tabs__tabs {
+		/*поведение*/
+		display: flex;
+		flex-flow: row nowrap;	
+		flex: 1 1 30%;
+		/*стили*/
+
+		& > ul {
+		      /*поведение*/
+		      display: flex;
+		      flex-flow: column nowrap;
+		      /*стили*/
+		      margin: 0;
+		      padding: 0;
+		      width: 100%;
+
+		  	& > li {
+			      /*поведение*/
+			      flex: 1 1 100%;
+			      /*стили*/
+			      // background-color: gray;
+			      list-style: none;
+			      padding: 20px;
+			      margin: 1px;
+			      cursor: pointer;
+
+			      &.active {
+			      	background-color: orange;
+			      }
+
+			      &:hover {opacity: .85;}
+		    	}
+		}
+	}
+
+	.section-tabs__content {
+		/*поведение*/
+		flex: 1 1 70%;
+
+		display: flex;
+		flex-flow: column nowrap;
+
+		/*стили*/
+		padding: 2rem;
+
+		.slide {
+			height: 100%;
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 95%; 
+		margin: 0 auto;
+	}
+    	.section-tabs_horizontal,
+    	.section-tabs_vertical {        
+    	    	flex-direction: column;
+    	}
+	.section-tabs {
+		width: 100%;
+	}
+    	.section-tabs__content {
+       	display: none !important;
+    	}
+    	.section-tabs__tabs > ul {
+    		display: none !important;
+    	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .section-tabs__tabs {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-tabs__tabs>ul {
+        display: none;
+    }
+}
+
+
+.slide {}
+.collapsable {
+    position: relative;
+}
+.collapsable__btn {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 35px;
+    height: 35px;
+    bottom: -17px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url(/img/icons/caret-white.png) #009e6a no-repeat;
+    background-position: center center;
+    z-index: 2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.section-tabs__content.concatenated {
+    -webkit-transition: max-height 500ms !important;
+    -o-transition: max-height 500ms !important;
+    transition: max-height 500ms !important;
+    max-height: 335px !important;
+}
+
+/*ACCORDEON STYLES*/
+
+@media screen and (min-width: 769px) {
+    	#mini_tab {
+        	display: none;
+    	}
+}
+#mini_tab {
+  	width: 100%;
+}
+.cd-accordion-menu {
+	display: block;
+    	margin: 0;
+    	padding: 0;
+}
+.cd-accordion-menu .has-children {
+    margin-bottom: 2px;
+    list-style: none;
+}
+.cd-accordion-menu .has-children .slide_children {
+    margin: 10px 15px;
+}
+.has-children label {
+    position: relative;
+    display: block;
+    padding: 15px 40px 15px 15px;
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+}
+.has-children label:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 15px;
+    top: 50%;    
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    
+    transition: 200ms;
+}
+.has-children.active label:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+    -ms-transform: translateY(-50%) rotate(-135deg);
+    transform: translateY(-50%) rotate(-135deg);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}

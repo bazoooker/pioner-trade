@@ -19,11 +19,14 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 
   box-sizing: border-box;
+
+  height: 100%;
 }
 
     
 
 body {
+    height: 100%;
     margin: 0;
     background-image: url(/img/bg/bg-main-page.png);
     background-size: 86%;
@@ -31,6 +34,21 @@ body {
     background-position: 100% 0%;
     background-repeat: no-repeat;
 
+    
+}
+
+.page-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    height: 100%;
+
+    .page-content {
+      flex-grow: 1;
+      padding-bottom: 3rem;
+    }
 }
 
 *, *:before, *:after {

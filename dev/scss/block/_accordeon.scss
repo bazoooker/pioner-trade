@@ -1,0 +1,23 @@
+.accordeon {
+	
+	&.opened {
+		.accordeon__label {
+			background-color: lightgray;
+		}		
+	}
+}
+.accordeon__label {
+	padding: .4rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+
+	cursor: pointer;
+}
+.accordeon__content {
+	padding: .5rem;
+
+	overflow: hidden;
+
+	// max-height: 0;
+	// display: none;
+}

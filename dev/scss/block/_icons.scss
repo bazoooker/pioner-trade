@@ -90,3 +90,21 @@
 		background-image: url(/img/icons/icon-location.png);
 	}
 }
+
+.icon_burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+@media screen and (max-width: 568px) {
+	.logo_header {
+		background-size: 240px;
+	}
+	.page-header__top-bar {
+		padding: 3rem 1rem !important;
+	}
+}

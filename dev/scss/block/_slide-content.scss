@@ -113,3 +113,20 @@
 	font-weight: 900;
 	color: #fff;
 }
+
+
+
+@media screen and (max-width: 960px) {
+	.slide-content {
+		width: 100%;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	.slide-content {
+
+		&:before {
+			display: none;
+		}
+	}
+}

@@ -10,3 +10,16 @@
 	font-weight: 800;
 	text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 768px) {
+	.advantage {
+		flex: 1 1 45%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.advantage {
+		flex: 1 1 100%;
+	}
+}

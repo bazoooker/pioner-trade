@@ -2,3 +2,9 @@
 	display: flex;
 	flex-flow: row wrap;
 }
+
+@media screen and (max-width: 1200px) {
+	.advantages {
+		flex: 1 1 100%;
+	}
+}

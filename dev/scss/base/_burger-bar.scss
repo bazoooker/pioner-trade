@@ -1,0 +1,11 @@
+.burger-bar {
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 7px;
+
+	&::last-child {
+		margin-bottom: 0;
+	}
+}

@@ -180,3 +180,29 @@
 .swiper-button-disabled {opacity: .2 !important;}
 
 
+
+
+@media screen and (max-width: 1500px) {
+	.hero-slider-btn_next {
+		right: 3rem;	
+	}
+	.hero-slider-btn_prev {
+		left: 3rem;	
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.hero-slider-btn_next {
+		right: 1rem;	
+	}
+	.hero-slider-btn_prev {
+		left: 1rem;	
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-slider-btn_next,
+	.hero-slider-btn_prev {
+		display: none
+	}
+}

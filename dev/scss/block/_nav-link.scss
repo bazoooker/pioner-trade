@@ -51,10 +51,18 @@
 
 .nav-link:nth-child(2) {
 	margin-left: 0;
-	padding-left: 1rem;
+	// padding-left: 1rem;
 }
 
 .nav-link:nth-child(1):after,
 .nav-link:nth-child(2):after {
 	background-image: none;
+}
+
+.nav-link_burger {
+    background-color: transparent;
+    height: auto;
+    display: flex;
+        align-items: stretch;
+    justify-content: stretch;
 }

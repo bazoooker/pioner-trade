@@ -98,12 +98,16 @@
     align-items: flex-start;
 }
 
+@media screen and (max-width: 1100px) {
+	.logo_footer {
+		margin-bottom: 2rem;
+	}
+}
+
 
 @media screen and (max-width: 568px) {
-	.logo_header {
-		background-size: 240px;
-	}
-	.page-header__top-bar {
-		padding: 3rem 1rem !important;
+	.logo_header,
+	.logo_footer {
+		background-size: 225px;
 	}
 }

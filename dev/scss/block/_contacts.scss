@@ -65,14 +65,28 @@
 	}
 }
 
+@media screen and (min-width: 568px) and (max-width: 768px) {
+	.contacts__mail {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 568px) {
-	.contacts_header {
+	.contacts_header,
+	.contacts_footer {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 
 		a {
-			margin-bottom: 1rem;
+			margin: 0 0 1rem 0;
+		}
+
+		.contacts__mail,
+		.btn {
+			display: none;
 		}
 	}
+
+
 }

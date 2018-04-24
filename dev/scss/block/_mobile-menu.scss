@@ -16,7 +16,7 @@
 		margin:0;
 		padding: 1.5rem 1.5rem 1.5rem 4rem;
 		// padding-left: 4rem;
-		background-image: url(/img/icons/icon-star_filled.png);
+		background-image: url(/img/icons/icon-star_filled-orange.png);
 		background-size: 11px;
 		background-position: 1.5rem 45%; 
 		background-repeat: no-repeat;
@@ -24,6 +24,11 @@
 		font-size: 1.4rem;
 
 		color: $color_main;
+
+		&:hover {
+			background-color: #fff;
+
+		}
 	}
 
 	.contacts__tel {
@@ -38,6 +43,7 @@
 	.logo_header {
 		width: 252px;
 		background-size: 230px;
+		margin-bottom: 2rem;
 	}
 
 	.btn {

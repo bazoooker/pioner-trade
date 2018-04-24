@@ -15,6 +15,11 @@
       navigation: {
         nextEl: '.js-products-slider-btn_next',
         prevEl: '.js-products-slider-btn_prev',
+      },
+      breakpoints: {        
+        768: {
+          slidesPerView: 1
+        }
       }   
     });
 
@@ -28,7 +33,12 @@
       pagination: {
         el: '.swiper-pagination',
         clickable: true
-      },   
+      },
+      breakpoints: {        
+        960: {
+          slidesPerView: 1
+        }
+      }    
     });
 
 
@@ -220,18 +230,17 @@ $(document).ready(function () {
             $(this).parent().find('.js-accordeon__content').slideDown(300);
         }
     });
+
+    
 })
     
-
 
     // $('.collapsable__btn').on("click", function() {
     //     $(this).toggleClass('untoggled');
     // });
 
 
-// mobile menu
-
-
+// MOBILE MENU
 
 $(document).ready(function () {
 
@@ -252,7 +261,20 @@ $(document).ready(function () {
             $('.overlay').fadeIn(150);
             $('.page-wrapper').addClass('h-no-scroll');
         }
-        
-        
+                
     });
 })
+
+
+// CONCATENATE TEXT IN NEWS PREVIEW ON MOBILE SCREENS
+
+$(document).ready(function () {    
+
+    var myText = $('.news-slider-item__ad');
+
+    if( $(window).width() < 768) {
+        myText.text(myText.text().substring(0,50)+'...');    
+    }
+    
+})
+

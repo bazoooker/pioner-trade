@@ -183,26 +183,40 @@
 
 
 @media screen and (max-width: 1500px) {
-	.hero-slider-btn_next {
-		right: 3rem;	
+	.hero-slider-btn_next,
+	.products-slider-btn_next,
+	.news-slider-btn_next {
+		// right: 3rem;	
+		right: -6rem;	
 	}
-	.hero-slider-btn_prev {
-		left: 3rem;	
+	.hero-slider-btn_prev,
+	.products-slider-btn_prev,
+	.news-slider-btn_prev {
+		// left: 3rem;	
+		left: -6rem;	
 	}
 }
 
-@media screen and (max-width: 1200px) {
-	.hero-slider-btn_next {
-		right: 1rem;	
-	}
-	.hero-slider-btn_prev {
-		left: 1rem;	
-	}
-}
+// @media screen and (max-width: 1200px) {
+// 	.hero-slider-btn_next,
+// 	.products-slider-btn_next,
+// 	.news-slider-btn_next {
+// 		right: 1rem;	
+// 	}
+// 	.hero-slider-btn_prev,
+// 	.products-slider-btn_prev,
+// 	.news-slider-btn_prev {
+// 		left: 1rem;	
+// 	}
+// }
 
 @media screen and (max-width: 768px) {
 	.hero-slider-btn_next,
-	.hero-slider-btn_prev {
+	.products-slider-btn_next,
+	.news-slider-btn_next,
+	.hero-slider-btn_prev,
+	.products-slider-btn_prev,
+	.news-slider-btn_prev {
 		display: none
 	}
 }

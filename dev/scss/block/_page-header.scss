@@ -16,3 +16,9 @@
 		justify-content: center;
 	}
 }
+
+@media screen and (max-width: 568px) {
+	.page-header__top-bar {
+		padding: 6rem 1rem;
+	}
+}

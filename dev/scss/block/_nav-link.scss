@@ -47,6 +47,31 @@
 	}
 }
 
+.nav-link_mobile {
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem .5rem;
+
+
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    width:5rem;
+    height: 5rem;
+    background-color: #fe5b00;
+    color: #fff;
+
+    cursor: pointer;
+
+    &.opened {
+    	background-color: #807f7f;
+    }
+}
+
 
 
 .nav-link:nth-child(2) {
@@ -65,4 +90,21 @@
     display: flex;
         align-items: stretch;
     justify-content: stretch;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+	.nav-link {
+		margin: -1.2rem 0 -1.2rem 3rem;
+		padding: 2rem 1.5rem 2rem 1.5rem;
+		&:after {
+			@include pseudo;
+			left: -2.2rem;
+		}
+	}
+
+	.nav-link_home {
+		display: none;
+	}
 }

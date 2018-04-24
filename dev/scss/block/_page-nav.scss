@@ -10,11 +10,14 @@
 	background-color: $color_main;
 }
 
-// @media screen and (max-width: 568px) {
-// 	.logo_header {
-// 		background-size: 240px;
-// 	}
-// 	.page-header__top-bar {
-// 		padding: 3rem 1rem !important;
-// 	}
-// }
+@media screen and (max-width: 1300px) {
+	.page-nav {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.page-nav {
+		display: none;
+	}
+}

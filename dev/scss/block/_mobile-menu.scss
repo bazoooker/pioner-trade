@@ -1,0 +1,56 @@
+.mobile-menu {
+	position: fixed;
+	// left: -28.2rem;
+	top: 0;
+	left: 0;
+
+	padding: 3rem 1rem;
+	background-color: #fff;
+	z-index: 9999;
+
+	height: 100%;
+	
+
+	
+
+	transition: 300ms;
+
+	.nav-link {
+		margin:0;
+		padding: 1.5rem 1.5rem 1.5rem 4rem;
+		// padding-left: 4rem;
+		background-image: url(/img/icons/icon-star_filled.png);
+		background-size: 11px;
+		background-position: 1.5rem 45%; 
+		background-repeat: no-repeat;
+
+		font-size: 1.4rem;
+
+		color: $color_main;
+	}
+
+	.contacts__tel {
+		font-size: 1.8rem;
+		margin: 0 0 1rem 2rem;
+	}
+	.contacts__mail {
+		font-size: 1.1rem;
+		margin: 0 0 1rem 2rem;
+	}
+
+	.logo_header {
+		width: 252px;
+		background-size: 230px;
+	}
+
+	.btn {
+		margin: 0 2rem 1rem 1rem;
+	}
+
+}
+
+.mobile-menu__wrapper {
+	overflow-y:auto;
+	width: 25.2rem;
+	height: 100%;
+}

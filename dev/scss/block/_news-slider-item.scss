@@ -61,3 +61,18 @@
 .news-slider-item__ad {
 	font-size: 1.4rem;
 }
+
+@media screen and (max-width: 768px) {
+	.news-slider-item__text {
+		@include flex-row;
+		align-items: center;
+		flex: 1 1 45%;
+	}
+	.news-slider-item__heading {
+		margin: 0;
+	}
+	.news-slider-item__ad {
+		display: none;
+	}
+
+}

@@ -272,7 +272,7 @@ $(document).ready(function () {
 
     var myText = $('.news-slider-item__ad');
 
-    if( $(window).width() < 768) {
+    if( $(window).width() < 960) {
         myText.text(myText.text().substring(0,50)+'...');    
     }
     

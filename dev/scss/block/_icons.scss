@@ -110,4 +110,15 @@
 	.logo_footer {
 		background-size: 225px;
 	}
+
+	.icon_star {
+		margin: 2rem auto;
+	}
+
+	.advantage:first-of-type {
+
+		.icon_star {
+			margin-top: 0;
+		}
+	}
 }

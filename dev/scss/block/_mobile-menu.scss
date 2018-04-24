@@ -9,10 +9,7 @@
 	z-index: 9999;
 
 	height: 100%;
-	
-
-	
-
+	transform: translateX(-27.2rem);
 	transition: 300ms;
 
 	.nav-link {
@@ -45,6 +42,10 @@
 
 	.btn {
 		margin: 0 2rem 1rem 1rem;
+	}
+
+	&.mobile-menu_visible {
+		transform: translateX(0);
 	}
 
 }

@@ -5,7 +5,8 @@
 	display: block;
 	// margin-bottom: 7px;
 
-	transition: 400ms;
+	transition: 200ms;
+	transition-delay: 300ms;
 
 	&:last-child {
 		margin-bottom: 0;

@@ -227,3 +227,32 @@ $(document).ready(function () {
     // $('.collapsable__btn').on("click", function() {
     //     $(this).toggleClass('untoggled');
     // });
+
+
+// mobile menu
+
+
+
+$(document).ready(function () {
+
+    $('.js-open-mobile-menu').click(function() {
+        if( $('.js-open-mobile-menu').hasClass('opened') ){
+            $('.js-open-mobile-menu').removeClass('opened');
+
+            $('.mobile-menu').removeClass('mobile-menu_visible');
+            $('.overlay').fadeOut(150);
+            $('.page-wrapper').removeClass('h-no-scroll');
+
+        }
+
+        else {
+            $('.js-open-mobile-menu').addClass('opened');
+
+            $('.mobile-menu').addClass('mobile-menu_visible');
+            $('.overlay').fadeIn(150);
+            $('.page-wrapper').addClass('h-no-scroll');
+        }
+        
+        
+    });
+})

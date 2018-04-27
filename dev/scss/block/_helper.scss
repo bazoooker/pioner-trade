@@ -22,3 +22,23 @@
 .h-no-scroll {
 	overflow-y:hidden;
 }
+
+.h-single-photo {
+	display: block;
+	height: 27rem;
+	background-size: cover;
+	background-position: 50% 30%;
+	border-bottom: 5px solid $color_main;
+
+	@media screen and (max-width: 768px) {
+		height: 21rem;
+	}
+}
+
+.h-section {
+	margin-bottom: 4rem;
+}
+
+.h-padding {
+	padding: 4rem 0;
+}

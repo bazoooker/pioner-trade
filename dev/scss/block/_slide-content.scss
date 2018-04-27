@@ -52,7 +52,11 @@
 }
 
 .slide-content__offer {
-	font-size: 1.3rem;	
+	font-size: 1.3rem;
+
+	ul,p {
+		color: #fff;	
+	}
 }
 
 .slide-content__additional_top {

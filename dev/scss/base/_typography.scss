@@ -46,3 +46,23 @@ ul {
 		margin-bottom: .5rem;	
 	}
 }
+
+.col-3,
+.col-4,
+.col-6 {
+	& > h5:first-child,
+	& > h3:first-child {
+		margin-top: 0;
+	}
+
+	& > p:first-child {
+		margin-top: 0;
+	}
+
+@media screen and (min-width: 769px) {
+	
+		& > p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -36,3 +36,52 @@
 .product__package {}
 .product__availability {}
 
+@media screen and (max-width: 768px) {
+	.product {
+		flex-flow: column nowrap;
+	}
+	.product__name {
+		font-weight: 900;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+	}
+
+	.product__manufact,
+	.product__package,
+	.product__availability {
+		padding-left: 11rem;
+		position: relative;
+		font-weight: 400;
+	}
+
+	.product__manufact:before {
+		position: absolute;
+		display: inline-block;
+		left: 1.2rem;
+		top: .5rem;
+		content: 'Произв-ль:';
+		color: gray;
+		font-size: 1.2rem;
+		font-style: italic;
+	}
+	.product__package:before {
+		position: absolute;
+		display: inline-block;
+		left: 1.2rem;
+		top: .5rem;
+		content: 'Формула:';
+		color: gray;
+		font-size: 1.2rem;
+		font-style: italic;
+	}
+	.product__availability:before {
+		position: absolute;
+		display: inline-block;
+		left: 1.2rem;
+		top: .5rem;
+		content: 'Наличие:';
+		color: gray;
+		font-size: 1.2rem;
+		font-style: italic;
+	}
+}

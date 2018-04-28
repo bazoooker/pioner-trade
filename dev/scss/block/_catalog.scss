@@ -1,5 +1,10 @@
 .catalog {
-
 	flex: 1 1 65%;
 	margin-right: 5rem;
+}
+
+@media screen and (max-width: 1023px) {
+	.catalog {
+		margin-right: 0;
+	}
 }

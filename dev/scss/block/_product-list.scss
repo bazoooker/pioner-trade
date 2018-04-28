@@ -25,3 +25,9 @@
 	font-style: italic;
 	padding: .5rem;
 }
+
+@media screen and (max-width: 768px) {
+	.product-list__heading {
+		display: none;
+	}
+}

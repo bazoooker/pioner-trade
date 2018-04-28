@@ -237,15 +237,17 @@
     list-style: none;
 }
 .cd-accordion-menu .has-children .slide_children {
-    margin: 10px 15px;
+    margin: 10px 0;
 }
 .has-children label {
     position: relative;
     display: block;
     padding: 15px 40px 15px 15px;
-    background: gray;
+    background: #ff7503;
     color: #fff;
     cursor: pointer;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 .has-children label:after {
     content: '';

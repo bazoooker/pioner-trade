@@ -50,3 +50,12 @@
 	// display: none;
 	// max-height: 0;
 }
+
+@media screen and (max-width: 768px) {
+	.product-category__label {
+		padding-right: 4rem;
+		
+		font-weight: 400;
+		text-transform: none;
+	}
+}

@@ -3,6 +3,9 @@
 	var swiperMain = new Swiper('.swiper-container-main', {
 	  slidesPerView: 1,
 	  spaceBetween: 0,
+      autoplay: {
+        delay: 4000,
+      },
 	  navigation: {
 	    nextEl: '.js-hero-slider-btn_next',
 	    prevEl: '.js-hero-slider-btn_prev',
@@ -58,13 +61,7 @@ $(document).ready(function(){
     $('.modal').find('input, textarea').val('');
         return false;
     });    
-    $('.modal').each(function(){
-        var f=$(this).find('.modal-content');
-        var t=$(this).find('.modal-content-copy');
-        t.html(f.html());
-        t.hide();
 
-    });
 });
 /* МОДАЛЬНЫЕ ОКНА END */
 
@@ -89,7 +86,7 @@ $(".modal form").on('submit', function(e){
       var f=$(modal).find('.modal-content-copy');
       var t=$(modal).find('.modal-content');
                   setTimeout("$('.modal').find('input, textarea').val('')",3000);
-      
+                console.log(data.done);
                 } else {
                     $(modal).find('.modal-errors').html(data.message);
     $(modal).find('.modal-errors').show('fast')
@@ -98,13 +95,22 @@ $(".modal form").on('submit', function(e){
                 }
             },
             complete: function(){
-                $(modal).children(".spinner").hide();                     
+                $(modal).children(".spinner").hide();  
+                // $('#overlay').hide(); 
+                 $('.modal .modal-close').click();
+                // console.log('complete');                  
             }
         });
         return false;
     });
 
+    $('.modal').each(function(){
+        var f=$(this).find('.modal-content');
+        var t=$(this).find('.modal-content-copy');
+        t.html(f.html());
+        t.hide();
 
+    });
 
 
 // TABS
